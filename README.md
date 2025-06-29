@@ -47,13 +47,13 @@ Eye Care Hub is a modern web platform designed to improve access to eye care ser
 
 ## 🗂️ Folder Structure
 
-/src
-/assets → Images
-/components → Reusable UI components
-/hooks → Reusable custom hooks
-/pages → Role-based pages (doctor, client, admin)
-/redux → Redux store & setup, slices, React Query config & API functions
-/routes → Protected routes
+- /src
+- /assets → Images
+- /components → Reusable UI components
+- /hooks → Reusable custom hooks
+- /pages → Role-based pages (doctor, client, admin)
+- /redux → Redux store & setup, slices, React Query config & API functions
+- /routes → Protected routes
 
 ---
 
@@ -86,7 +86,7 @@ npm run dev
 | Home Page                       | Try-On Feature                    | Dashboard                                 |
 | ------------------------------- | --------------------------------- | ----------------------------------------- |
 | ![home](./screenshots/home.png) | ![tryon](./screenshots/tryon.png) | ![dashboard](./screenshots/dashboard.png) |
-|-----------------------------------------------------------------------------------------------------------------|
+
 | Educational Content             | Book Appointment                  | Market                                    |
 | ------------------------------- | --------------------------------- | ----------------------------------------- |
 | ![home](./screenshots/ed.png)   | ![tryon](./screenshots/book.png)  | ![dashboard](./screenshots/market.png)    |
