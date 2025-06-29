@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container and transitions */
+.sideMenuContainer {
+  @apply pt-[4rem] flex flex-col fixed top-0 bottom-0 right-0 bg-white shadow-lg z-50 transition-transform duration-300 w-full sm:w-1/2 lg:w-1/3;
+}
+
+.sideMenuContainer.closed {
+  @apply translate-x-full;
+}
+
+.sideMenuContainer.open {
+  @apply translate-x-0;
+}
+
+/* Header */
+.sideMenuHeader {
+  @apply flex justify-between items-center p-4 border-b;
+}
+
+.sideMenuTitle {
+  @apply text-xl font-semibold text-sky-600;
+}
+
+.sideMenuClose {
+  @apply text-gray-700 text-xl font-bold;
+}
+
+/* Scroll area */
+.sideMenuScroll {
+  @apply overflow-y-auto p-4 space-y-6;
+  max-height: calc(100vh - 160px);
+  flex: 1;
+}
+
+/* Cards */
+.sideMenuCard {
+  @apply border border-sky-200 rounded-xl p-4 shadow-sm space-y-2;
+}
+
+.sideMenuImage {
+  @apply w-full h-36 object-contain rounded-lg mb-2;
+}
+
+.sideMenuTag {
+  @apply inline-block bg-green-500 text-white text-xs px-3 py-1 rounded-full;
+}
+
+.sideMenuHeading {
+  @apply text-lg font-semibold text-sky-600 uppercase my-1;
+}
+
+.sideMenuText {
+  @apply text-gray-700 text-sm mb-1;
+}
+
+.starIcon {
+  @apply text-yellow-400;
+}
+
+/* Social icons */
+.sideMenuSocial {
+  @apply flex gap-3 mb-2 text-sky-600;
+}
+
+.sideMenuSocial a {
+  @apply hover:scale-110 transition-transform;
+}
+
+/* Buttons */
+.sideMenuButton {
+  @apply bg-sky-600 text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-sky-700 transition;
+}
+
+.sideMenuViewmore {
+  @apply bg-gradient-to-r from-sky-600 to-sky-800 text-white font-semibold px-6 py-3 my-4 mx-auto block rounded-full hover:-translate-y-1 transition;
+}

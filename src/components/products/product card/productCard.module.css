@@ -1,0 +1,59 @@
+.box {
+  @apply max-w-[300px] w-full mx-auto flex flex-col shadow-[0px_0px_5px_0px_#dddddd] rounded-[10px] overflow-hidden transition-all duration-300 hover:shadow-[3px_9px_21px_0px_#dddddd];
+}
+
+.box .image_con {
+  @apply h-[250px] flex items-center justify-center p-[15px] bg-white relative cursor-pointer;
+
+  .product_image {
+    @apply max-w-full max-h-[230px];
+  }
+
+  .top {
+    @apply absolute top-[15px] left-[15px] right-[15px] flex justify-between;
+
+    > div {
+      @apply py-[7px] px-[10px] text-white text-[13px] rounded-2xl capitalize;
+    }
+  }
+}
+
+.tryAR {
+  @apply py-[7px] px-[10px] text-[13px] rounded-2xl bg-[#00FFF2] text-[#000] cursor-pointer transition-all duration-300 hover:bg-[#00e6e6];
+}
+
+.box .data {
+  @apply flex-1 p-[15px] flex flex-col justify-between gap-[10px] border-t border-gray-200 bg-white transition-all duration-300;
+}
+
+.box .box_title {
+  @apply font-bold text-[18px] leading-[1.4] cursor-pointer truncate;
+}
+
+.box p {
+  @apply text-[14px] leading-normal;
+
+  &.price {
+    @apply font-bold;
+  }
+}
+
+.box .more {
+  @apply flex items-center justify-between;
+}
+
+.box .cart_btn {
+  @apply text-white py-[7px] px-[10px] text-[14px] rounded-[6px] transition-all duration-300 cursor-pointer border-none;
+
+  &.remove_from_cart {
+    @apply bg-[#249FDD] hover:bg-[#1b81b4];
+  }
+
+  &.add_to_cart {
+    @apply bg-[#cb0000] hover:bg-[#a50000];
+  }
+}
+
+.main {
+  @apply flex justify-between items-center;
+}

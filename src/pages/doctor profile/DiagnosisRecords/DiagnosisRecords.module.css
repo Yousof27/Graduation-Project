@@ -1,0 +1,375 @@
+.diagnosisRecords {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sectionCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.addButton {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.addButton:hover {
+  background: #1d4ed8;
+}
+
+.recordsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recordItem {
+  border: 1px solid #f1f5f9;
+  border-radius: 12px;
+  padding: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.recordItem:hover {
+  border-color: #dbeafe;
+}
+
+.recordContent {
+  display: flex;
+  align-items: flex-start;
+}
+
+.recordIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.blueIcon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.indigoIcon {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.emeraldIcon {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.recordDetails {
+  flex: 1;
+}
+
+.recordHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.recordTitle {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.recordDate {
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.indigoDate {
+  color: #4338ca;
+}
+
+.emeraldDate {
+  color: #059669;
+}
+
+.recordDescription {
+  color: #475569;
+  margin: 8px 0 16px 0;
+  line-height: 1.6;
+}
+
+.badgeContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.indigoBadge {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.amberBadge {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.recordActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.viewButton,
+.shareButton,
+.analysisButton,
+.downloadButton,
+.prescriptionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.viewButton {
+  color: #2563eb;
+}
+
+.viewButton:hover {
+  color: #1d4ed8;
+  background: #f1f5f9;
+}
+
+.shareButton,
+.downloadButton {
+  color: #64748b;
+}
+
+.shareButton:hover,
+.downloadButton:hover {
+  color: #475569;
+  background: #f1f5f9;
+}
+
+.analysisButton {
+  color: #4338ca;
+}
+
+.analysisButton:hover {
+  color: #3730a3;
+  background: #f1f5f9;
+}
+
+.prescriptionButton {
+  color: #059669;
+}
+
+.prescriptionButton:hover {
+  color: #047857;
+  background: #f1f5f9;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sectionCard {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .recordContent {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .recordIcon {
+    margin-right: 0;
+    margin-bottom: 12px;
+    align-self: flex-start;
+  }
+
+  .recordHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .recordItem {
+    padding: 12px;
+  }
+
+  .recordTitle {
+    font-size: 1rem;
+  }
+
+  .recordDescription {
+    font-size: 0.875rem;
+  }
+
+  .recordActions {
+    gap: 8px;
+  }
+
+  .viewButton,
+  .shareButton,
+  .analysisButton,
+  .downloadButton,
+  .prescriptionButton {
+    padding: 6px 8px;
+    font-size: 0.875rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionCard {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .recordsList {
+    gap: 12px;
+  }
+
+  .recordItem {
+    padding: 10px;
+  }
+
+  .recordIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .recordTitle {
+    font-size: 0.875rem;
+  }
+
+  .recordDate {
+    font-size: 0.75rem;
+  }
+
+  .recordDescription {
+    font-size: 0.75rem;
+    margin: 6px 0 12px 0;
+  }
+
+  .badgeContainer {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  .recordActions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .viewButton,
+  .shareButton,
+  .analysisButton,
+  .downloadButton,
+  .prescriptionButton {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}

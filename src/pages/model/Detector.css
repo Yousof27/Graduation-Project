@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*──────────────────────────────
+  Custom Animations from your original
+──────────────────────────────*/
+@layer utilities {
+  /* fadeInUp */
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* fadeInLeft */
+  .animate-fadeInLeft {
+    animation: fadeInLeft 0.5s ease-out forwards;
+  }
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  /* scan animation (the “scan‐line” effect) */
+  .animate-scan {
+    animation: scan 2s ease-in-out infinite;
+  }
+  @keyframes scan {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+
+  /* checkmark animation (for progress‐item icons) */
+  .animate-checkmark {
+    animation: checkmark 0.5s ease-out;
+  }
+  @keyframes checkmark {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* bounce (used on icons inside actionGrid) */
+  .animate-bounce {
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  /* pulse (used in disclaimer icon) */
+  .animate-pulse {
+    animation: warning-pulse 2s ease-in-out infinite;
+  }
+  @keyframes warning-pulse {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+}
+/* Add to existing CSS */
+.confidence-bar {
+  height: 8px;
+  background-color: #e8f4ff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.confidence-fill {
+  height: 100%;
+  background-color: #176b87;
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-icon.complete {
+  background-color: #176b87;
+  color: white;
+}

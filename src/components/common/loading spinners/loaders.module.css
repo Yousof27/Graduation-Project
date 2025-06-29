@@ -1,0 +1,37 @@
+.isLoading {
+  padding: 50px 0px;
+  width: 100%;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.btnLoader,
+.pageLoader {
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+
+.btnLoader {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-top: 2px solid transparent;
+}
+
+.pageLoader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #005dd6;
+  border-top: 4px solid transparent;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

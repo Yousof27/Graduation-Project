@@ -1,0 +1,87 @@
+.box {
+  @apply flex flex-col w-full gap-[15px] text-center relative bg-white p-[15px] transition-all duration-300 rounded-[10px] shadow-[3px_9px_21px_0px_rgba(221,221,221,1)]
+        sm:text-left sm:flex-row sm:w-[500px] cursor-pointer;
+
+  > div {
+    @apply flex-1;
+  }
+}
+
+.box .product_image {
+  @apply flex-[1.5] max-h-[200px] mx-auto flex items-center justify-center;
+
+  img {
+    @apply max-w-full max-h-[200px];
+  }
+}
+
+.box .data {
+  @apply pt-[10px] flex flex-col justify-center text-center gap-[15px]
+        sm:flex-[2] sm:text-left sm:justify-between;
+
+  h2 {
+    @apply text-[22px] font-medium whitespace-pre-wrap;
+  }
+
+  p {
+    @apply text-[18px] mt-[10px] font-bold;
+  }
+}
+
+.quantity_con {
+  @apply flex w-fit mx-auto opacity-60 transition-all duration-300 rounded-[6px] overflow-hidden shadow-[0px_0px_2px_0px_rgba(34,34,34,1)];
+
+  &:hover {
+    @apply opacity-100;
+  }
+}
+
+.quantity_con span {
+  @apply inline-block w-[30px] h-[30px] text-[#222] leading-[30px] text-center bg-white transition-all duration-300;
+}
+
+.quantity_con span.quantity {
+  @apply border-l-[none] border-r-[none];
+}
+
+.quantity_con span:not(.quantity) {
+  @apply cursor-pointer;
+
+  &.less {
+    @apply border-r border-r-[#999];
+  }
+
+  &.more {
+    @apply border-l border-l-[#999];
+  }
+
+  &:hover {
+    @apply shadow-[0px_0px_2px_0px_rgba(34,34,34,1)] relative z-[5];
+  }
+}
+
+.box .btns {
+  @apply flex justify-center gap-[10px] pt-[15px] border-t border-t-[#dddddd] transition-all duration-300
+        sm:justify-end;
+}
+
+.box button.buy,
+.box button.remove {
+  @apply text-[13px] uppercase text-white cursor-pointer font-bold rounded-[6px] py-[10px] px-[20px] transition-all duration-300;
+}
+
+.box button.buy {
+  @apply bg-[#e4a01c];
+
+  &:hover {
+    @apply bg-[#c48300];
+  }
+}
+
+.box button.remove {
+  @apply bg-[#cb0000];
+
+  &:hover {
+    @apply bg-[#a50000];
+  }
+}

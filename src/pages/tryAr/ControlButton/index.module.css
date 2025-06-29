@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .appearance-button {
+    appearance: button;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+.JeelizVTOWidgetButton {
+  @apply appearance-button backface-hidden bg-blue-500 rounded-md border-0 shadow-[inset_0_0_0_1px_rgba(50,50,93,0.1),0_2px_5px_rgba(50,50,93,0.1),0_1px_1px_rgba(0,0,0,0.07)] box-border text-white cursor-pointer font-sans text-base h-11 leading-tight mt-3 outline-none overflow-hidden px-6 relative text-center transition-all duration-200 select-none touch-manipulation w-[200px];
+}
+
+.JeelizVTOWidgetControls.JeelizVTOWidgetChangeModelContainer {
+  @apply block;
+}
+
+.JeelizVTOWidgetButton:disabled {
+  @apply cursor-default;
+}
+
+.JeelizVTOWidgetButton:focus {
+  @apply shadow-[inset_0_0_0_1px_rgba(50,50,93,0.1),0_6px_15px_rgba(50,50,93,0.2),0_2px_2px_rgba(0,0,0,0.1),0_0_0_4px_rgba(50,151,211,0.3)];
+}

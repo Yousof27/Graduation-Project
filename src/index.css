@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply box-border p-0 m-0;
+}
+
+body {
+  @apply bg-white font-sans;
+}
+
+ul {
+  @apply list-none;
+}
+
+a {
+  @apply no-underline;
+}
+
+input {
+  @apply focus:outline-none;
+}
+
+button {
+  @apply border-none focus:outline-none focus:border-none cursor-pointer;
+}
+
+.container {
+  @apply px-5 mx-auto sm:max-w-[640px] md:max-w-[748px] lg:max-w-[1004px] xl:max-w-[1260px] 2xl:max-w-[1516px];
+}
+
+.overlay {
+  @apply absolute top-0 left-0 right-0 w-full h-screen z-[-1] transition-all duration-300;
+
+  &:not(.active) {
+    @apply invisible opacity-0;
+  }
+
+  &.active {
+    @apply visible bg-black/70 backdrop-blur-[8px];
+  }
+}
+
+.isLoading,
+.error,
+.isEmpty {
+  @apply py-12 w-full text-center col-span-full;
+}
+
+/*
+
+sm: 640px
+
+md: 768px
+
+lg: 1024px
+
+xl: 1280px
+
+2xl: 1536px
+
+*/

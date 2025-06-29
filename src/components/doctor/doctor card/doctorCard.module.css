@@ -1,0 +1,79 @@
+.card {
+  @apply max-w-[300px] flex m-auto flex-col bg-white rounded-xl shadow-[0_0_5px_0px_#dddddd] overflow-hidden transition-all duration-300 cursor-pointer;
+}
+
+.card:hover {
+  @apply shadow-[3px_9px_21px_0px_#dddddd];
+}
+
+.imgCon {
+  @apply p-[10px];
+}
+
+.image {
+  @apply h-[220px] w-full object-contain;
+}
+
+.content {
+  @apply flex-1 p-[16px] pt-[5px] flex flex-col gap-[8px];
+}
+
+.name {
+  @apply text-[20px] font-bold;
+}
+
+.specialty {
+  @apply text-[16px] text-[#0077cc];
+}
+
+.location {
+  @apply text-[14px] text-[#555];
+}
+
+.rating {
+  @apply text-[#f39c12] text-[14px] font-bold;
+}
+
+.days {
+  @apply text-[14px] text-[#333];
+}
+
+.bio {
+  @apply flex-1 text-[14px] text-[#444] flex items-center;
+}
+
+.last {
+  @apply flex items-center justify-between gap-[20px];
+}
+
+.social {
+  @apply flex gap-[10px];
+}
+
+.social a {
+  @apply text-[18px] transition-[0.2s];
+}
+
+a.facebook {
+  @apply text-[#1877f2];
+}
+
+a.twitter {
+  @apply text-[#1da1f2];
+}
+
+a.linkedin {
+  @apply text-[#0a66c2];
+}
+
+.social a:hover {
+  @apply transform scale-[1.8];
+}
+
+.button {
+  @apply bg-[#0077cc] text-white text-[14px] p-[8px_16px] border-none rounded-[6px] cursor-pointer font-medium transition-all duration-300;
+}
+
+.button:hover {
+  @apply bg-[#005fa3];
+}

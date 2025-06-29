@@ -1,0 +1,15 @@
+.market_con {
+  padding: 72px 0px;
+  background-color: white;
+}
+
+.cards {
+  padding-top: 54px;
+}
+
+.cards .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(267px, 1fr));
+  gap: 50px 20px;
+  position: relative;
+}

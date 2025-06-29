@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": "post-001",
+      "icon": "FaBook",
+      "type": "article",
+      "title": "Complete Guide to Eye Health",
+      "category": "General Care",
+      "readTime": "8 min read",
+      "author": "Dr.Vision Expert",
+      "description": "Essential tips for maintaining healthy vision throughout your life",
+      "content": "Your eyes are precious windows to the world, and maintaining their health is crucial for your quality of life. Here are the fundamental principles of eye care:\n\n**Daily Eye Care Routine:**\n• Wash your hands before touching your eyes\n• Remove makeup gently using appropriate removers\n• Use artificial tears if you experience dryness\n• Follow the 20-20-20 rule when using screens\n\n**Nutrition for Eye Health:**\nFoods rich in vitamins A, C, and E, along with omega-3 fatty acids, support eye health. Include leafy greens, fish, nuts, and colorful fruits in your diet.\n\n**Regular Eye Exams:**\nAdults should have comprehensive eye exams every 1-2 years, or as recommended by their eye care professional. Early detection is key to preventing serious eye conditions."
+    },
+    {
+      "id": "post-002",
+      "icon": "FaPlay",
+      "type": "video",
+      "title": "Understanding Glaucoma",
+      "category": "Disease Prevention",
+      "readTime": "12 min watch",
+      "author": "Eye Health Foundation",
+      "description": "Learn about the silent thief of sight and how to prevent it",
+      "content": "Glaucoma is often called the \"silent thief of sight\" because it typically has no early symptoms. Understanding this condition is crucial for prevention:\n\n**What is Glaucoma?**\nGlaucoma is a group of eye diseases that damage the optic nerve, usually due to increased pressure inside the eye. It's one of the leading causes of blindness worldwide.\n\n**Risk Factors:**\n• Age over 60\n• Family history of glaucoma\n• High eye pressure\n• Thin corneas\n• Diabetes, heart disease, or high blood pressure\n\n**Prevention and Early Detection:**\nRegular comprehensive eye exams are the best defense against glaucoma. Eye pressure testing, optic nerve evaluation, and visual field tests can detect glaucoma in its early stages.\n\n**Treatment Options:**\nWhile damage from glaucoma cannot be reversed, treatments including eye drops, laser therapy, and surgery can slow or prevent further vision loss."
+    },
+    {
+      "id": "post-003",
+      "icon": "FaExclamationTriangle",
+      "type": "article",
+      "title": "Diabetic Retinopathy Awareness",
+      "category": "Diabetes & Eyes",
+      "statues": "not saved",
+      "readTime": "10 min read",
+      "author": "Retina Specialists Group",
+      "description": "How diabetes affects your eyes and prevention strategies",
+      "content": "Diabetic retinopathy is a serious eye condition that affects people with diabetes. It's caused by damage to the blood vessels in the retina.\n\n**Stages of Diabetic Retinopathy:**\n1. **Mild Nonproliferative:** Small areas of balloon-like swelling in retinal blood vessels\n2. **Moderate Nonproliferative:** Blood vessels become blocked\n3. **Severe Nonproliferative:** More blood vessels are blocked, leading to poor blood supply\n4. **Proliferative:** Advanced stage where new blood vessels grow abnormally\n\n**Prevention Strategies:**\n• Maintain good blood sugar control\n• Monitor blood pressure and cholesterol\n• Get annual dilated eye exams\n• Follow your diabetes treatment plan\n• Exercise regularly and maintain a healthy weight\n\n**Early Warning Signs:**\nWhile early stages may have no symptoms, advanced stages can cause blurred vision, floaters, dark spots, or vision loss. Don't wait for symptoms—get regular eye exams."
+    },
+    {
+      "id": "post-004",
+      "icon": "FaImage",
+      "type": "image-article",
+      "title": "Cataract Prevention & Treatment",
+      "category": "Age-Related Conditions",
+      "readTime": "6 min read",
+      "author": "Cataract Surgery Center",
+      "description": "Understanding cataracts and modern treatment options",
+      "content": "Cataracts are a common age-related eye condition where the natural lens of the eye becomes cloudy, affecting vision clarity.\n\n**What Causes Cataracts?**\n• Natural aging process\n• UV radiation exposure\n• Smoking and alcohol consumption\n• Certain medications (corticosteroids)\n• Diabetes and other health conditions\n• Eye injuries or inflammation\n\n**Symptoms to Watch For:**\n• Cloudy or blurry vision\n• Increased sensitivity to light and glare\n• Seeing halos around lights\n• Frequent changes in eyeglass prescription\n• Fading or yellowing of colors\n• Double vision in one eye\n\n**Prevention Tips:**\n• Wear UV-protective sunglasses\n• Quit smoking\n• Eat a diet rich in antioxidants\n• Manage diabetes effectively\n• Limit alcohol consumption\n• Protect eyes from injury\n\n**Modern Treatment:**\nCataract surgery is one of the most successful procedures in medicine, with a 95% success rate. Modern techniques use ultrasound to break up the cataract and replace it with an artificial lens.",
+      "color": "green"
+    },
+    {
+      "id": "post-005",
+      "icon": "FaPlay",
+      "type": "video",
+      "title": "Digital Eye Strain Solutions",
+      "category": "Modern Eye Care",
+      "readTime": "8 min watch",
+      "author": "Digital Wellness Institute",
+      "description": "Protecting your eyes in the digital age",
+      "content": "In our digital world, computer vision syndrome (CVS) or digital eye strain is increasingly common. Here's how to protect your eyes:\n\n**Common Symptoms:**\n• Dry eyes and irritation\n• Blurred or double vision\n• Headaches and neck pain\n• Difficulty focusing\n• Increased light sensitivity\n\n**The 20-20-20 Rule:**\nEvery 20 minutes, look at something 20 feet away for at least 20 seconds. This simple rule helps relax the focusing muscles in your eyes.\n\n**Workspace Optimization:**\n• Position your screen 20-26 inches from your eyes\n• Keep the top of your screen at or below eye level\n• Adjust brightness to match your surroundings\n• Use anti-glare screen filters if needed\n• Ensure proper lighting to reduce glare\n\n**Artificial Tears and Blinking:**\nWe blink less when focusing on screens. Make conscious efforts to blink fully and frequently. Use preservative-free artificial tears if needed.\n\n**Blue Light Considerations:**\nWhile research is ongoing, blue light filtering glasses or screen filters may help some people, especially for evening screen use."
+    },
+    {
+      "id": "post-006",
+      "icon": "FaHeart",
+      "type": "article",
+      "title": "Nutrition for Healthy Eyes",
+      "category": "Lifestyle & Nutrition",
+      "statues": "not saved",
+      "readTime": "7 min read",
+      "author": "Nutritional Ophthalmology Team",
+      "description": "Foods and nutrients that support optimal eye health",
+      "content": "Proper nutrition plays a vital role in maintaining eye health and preventing age-related eye diseases.\n\n**Key Nutrients for Eye Health:**\n\n**Vitamin A:** Essential for night vision and overall eye health\n• Sources: Sweet potatoes, carrots, spinach, kale\n\n**Lutein and Zeaxanthin:** Protect against harmful blue light\n• Sources: Leafy greens, corn, eggs, citrus fruits\n\n**Vitamin C:** Antioxidant that supports blood vessels in the eyes\n• Sources: Citrus fruits, berries, bell peppers, broccoli\n\n**Vitamin E:** Protects cells from oxidative damage\n• Sources: Nuts, seeds, vegetable oils, leafy greens\n\n**Omega-3 Fatty Acids:** Support retinal health and reduce dry eyes\n• Sources: Fatty fish, flaxseeds, chia seeds, walnuts\n\n**Zinc:** Helps transport vitamin A from liver to retina\n• Sources: Oysters, beef, pumpkin seeds, chickpeas\n\n**Eye-Healthy Meal Ideas:**\n• Spinach and salmon salad with walnuts\n• Sweet potato and black bean bowl\n• Blueberry and almond smoothie\n• Kale and citrus fruit salad\n\nRemember: A balanced diet rich in colorful fruits and vegetables provides the best foundation for eye health."
+    }
+  ]
+}

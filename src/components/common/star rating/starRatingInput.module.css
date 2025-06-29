@@ -1,0 +1,34 @@
+.starContainer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  user-select: none;
+  width: fit-content;
+}
+
+.starLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.starInput {
+  display: none;
+}
+
+.star {
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  color: #e4e5e9;
+  transition: 0.2s ease;
+}
+
+.star:hover,
+.starLabel:hover .star {
+  color: #ffc107;
+  transform: scale(1.5);
+}
+
+.filled {
+  color: #ffc107;
+}

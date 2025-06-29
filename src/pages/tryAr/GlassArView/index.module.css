@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.star {
+  @apply m-0 p-0;
+}
+
+.html,
+.body {
+  @apply h-full;
+}
+
+.body {
+  @apply overflow-hidden bg-white text-center font-sans text-gray-700 box-border;
+}
+
+.JeelizVTOWidget {
+  @apply relative left-0;
+}
+
+.JeelizVTOWidgetCanvas {
+  @apply relative left-[70px] rounded-lg;
+}
+
+.JeelizVTOWidgetControls {
+  @apply ml-2.5;
+}
+
+.JeelizVTOWidgetButtonContainer {
+  @apply flex w-full justify-center items-center;
+}

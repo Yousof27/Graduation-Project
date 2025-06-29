@@ -1,0 +1,13 @@
+/* Hero.css */
+
+.hero-container {
+  @apply text-center mb-16 animate-pulse;
+}
+
+.hero-title {
+  @apply text-5xl font-light mb-5 bg-gradient-to-r from-gray-800 to-sky-600 text-transparent bg-clip-text;
+}
+
+.hero-subtitle {
+  @apply text-lg text-gray-600 font-light;
+}

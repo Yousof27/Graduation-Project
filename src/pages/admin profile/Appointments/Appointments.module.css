@@ -1,0 +1,324 @@
+.appointments {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sectionCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.appointmentsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointmentItem {
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid;
+}
+
+.approved {
+  border-color: #bbf7d0;
+  background: #f0fdf4;
+}
+
+.rejected {
+  border-color: #fecaca;
+  background: #fef2f2;
+}
+
+.pending {
+  border-color: #fde68a;
+  background: #fffbeb;
+}
+
+.completed {
+  border-color: #f1f5f9;
+  background: white;
+}
+
+.appointmentContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.patientName {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0 0 8px 0;
+}
+
+.appointmentTime {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+.approved .appointmentTime i {
+  color: #10b981;
+}
+
+.rejected .appointmentTime i {
+  color: #ef4444;
+}
+
+.pending .appointmentTime i {
+  color: #f59e0b;
+}
+
+.completed .appointmentTime i {
+  color: #64748b;
+}
+
+.appointmentDescription {
+  color: #475569;
+  margin: 8px 0 0 0;
+}
+
+.appointmentActions {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.appointmentStatus {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.approvedStatus {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.rejectedStatus {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.pendingStatus {
+  background: #fef3c7;
+  color: #d97706;
+  
+}
+
+.completedStatus {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.appointmentApprovedActions {
+  background: white;
+  border: 1px solid green;
+  color: green;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease ,color 0.2s ease;
+}
+.appointmentRejectActions {
+  background: white;
+  border: 1px solid red;
+  color: red;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease ,color 0.2s ease;
+}
+
+.appointmentApprovedActions:hover {
+  background: green;
+  color: white;
+}
+.appointmentRejectActions:hover {
+  background: red;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sectionCard {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .appointmentItem {
+    padding: 16px;
+  }
+
+  .patientName {
+    font-size: 1rem;
+  }
+
+  .appointmentContent {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .appointmentActions {
+    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+
+  .appointmentsList {
+    gap: 16px;
+  }
+
+  .appointmentItem {
+    padding: 12px;
+  }
+
+  .patientName {
+    font-size: 0.95rem;
+  }
+
+  .appointmentTime {
+    font-size: 0.85rem;
+  }
+
+  .appointmentDescription {
+    font-size: 0.85rem;
+  }
+
+  .appointmentStatus {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
+
+  .cancelButton {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionCard {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.125rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .appointmentsList {
+    gap: 12px;
+  }
+
+  .appointmentItem {
+    padding: 10px;
+  }
+
+  .patientName {
+    font-size: 0.875rem;
+  }
+
+  .appointmentTime {
+    font-size: 0.75rem;
+    gap: 6px;
+  }
+
+  .appointmentDescription {
+    font-size: 0.75rem;
+    margin: 6px 0 0 0;
+  }
+
+  .appointmentActions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  .appointmentStatus {
+    font-size: 0.7rem;
+    padding: 2px 8px;
+  }
+
+  .cancelButton {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

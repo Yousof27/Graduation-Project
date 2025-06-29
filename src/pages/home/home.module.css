@@ -1,0 +1,345 @@
+/* Animation keyframes */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Animation classes */
+.fadeInLeft {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Floating card animation */
+.floatingCard {
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+}
+
+.floatingCard::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4, #3b82f6);
+  border-radius: 2rem;
+  z-index: -1;
+  opacity: 0.1;
+  animation: pulse 3s ease-in-out infinite;
+}
+
+/* Service cards hover effects */
+.serviceCard {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.serviceCard:hover::before {
+  left: 100%;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+}
+
+/* Work step animations */
+.workStep {
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.workStep:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.workStep:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.workStep:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.workStep:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.workStep:hover {
+  transform: translateY(-10px);
+}
+
+/* Review items */
+.reviewItem {
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.reviewItem:hover {
+  transform: translateX(5px);
+}
+
+/* Review card animation */
+.reviewCard {
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.reviewCard::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4, #3b82f6);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Doctor cards */
+.doctorCard {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.doctorCard:hover {
+  transform: translateY(-10px);
+}
+
+.doctorCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  padding: 2px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.doctorCard:hover::before {
+  opacity: 0.5;
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+  .fadeInLeft,
+  .fadeInRight {
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  .floatingCard {
+    animation: none;
+  }
+}
+
+/* Loading states */
+.loading {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Scroll-triggered animations */
+.scrollReveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.scrollReveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Button hover effects */
+.ctaButton {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.ctaButton::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.ctaButton:hover::before {
+  left: 100%;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* Form animations */
+.formInput {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.formInput:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Section transitions */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Gradient text effect */
+.gradientText {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Icon animations */
+.iconFloat {
+  transition: all 0.3s ease;
+}
+
+.iconFloat:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Card stack effect */
+.cardStack {
+  position: relative;
+}
+
+.cardStack::before,
+.cardStack::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 1rem;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.cardStack::after {
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(59, 130, 246, 0.05);
+  z-index: -2;
+}
+
+.cardStack:hover::before {
+  top: 5px;
+  left: 5px;
+  right: -5px;
+  bottom: -5px;
+}
+
+.cardStack:hover::after {
+  top: 10px;
+  left: 10px;
+  right: -10px;
+  bottom: -10px;
+}

@@ -1,0 +1,18 @@
+/* Disclaimer.css */
+
+.disclaimer-container {
+  @apply bg-red-50 border border-red-300 rounded-xl p-6 my-8;
+}
+
+.disclaimer-header {
+  @apply flex items-center text-red-700 mb-4;
+}
+
+/* Only Tailwind classes can be applied here */
+.disclaimer-icon {
+  @apply mr-2 animate-pulse text-lg;
+}
+
+.disclaimer-text {
+  @apply text-gray-600 text-sm;
+}

@@ -1,0 +1,365 @@
+.invoices {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.sectionCard {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.subtitle {
+  color: #64748b;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.headerActions {
+  display: flex;
+  gap: 12px;
+}
+
+.filterButton,
+.exportButton {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.filterButton {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.filterButton:hover {
+  background: #e2e8f0;
+}
+
+.exportButton {
+  background: #2563eb;
+  color: white;
+}
+
+.exportButton:hover {
+  background: #1d4ed8;
+}
+
+.invoicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.invoiceItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.invoiceItem:hover {
+  background: #f8fafc;
+}
+
+.invoiceContent {
+  display: flex;
+  align-items: center;
+}
+
+.invoiceIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.blueIcon {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.purpleIcon {
+  background: #e9d5ff;
+  color: #7c3aed;
+}
+
+.amberIcon {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.invoiceDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.invoiceTitle {
+  font-weight: bold;
+  color: #1e293b;
+  margin: 0;
+}
+
+.invoiceDate {
+  color: #64748b;
+  font-size: 0.875rem;
+  margin: 4px 0 0 0;
+}
+
+.invoiceAmount {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.paidBadge {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.totalSection {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.totalContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalLabel {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.totalAmount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .sectionCard {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .invoiceItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .invoiceContent {
+    width: 100%;
+  }
+
+  .invoiceAmount {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .totalContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .headerActions {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .filterButton,
+  .exportButton {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+
+  .invoicesList {
+    gap: 12px;
+  }
+
+  .invoiceItem {
+    padding: 10px;
+  }
+
+  .invoiceTitle {
+    font-size: 0.95rem;
+  }
+
+  .invoiceDate {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .badge {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+
+  .totalSection {
+    margin-top: 24px;
+    padding-top: 16px;
+  }
+
+  .totalLabel {
+    font-size: 0.875rem;
+  }
+
+  .totalAmount {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionCard {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .headerActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterButton,
+  .exportButton {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 0.8rem;
+    justify-content: center;
+  }
+
+  .invoicesList {
+    gap: 10px;
+  }
+
+  .invoiceItem {
+    padding: 8px;
+  }
+
+  .invoiceIcon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .invoiceTitle {
+    font-size: 0.875rem;
+  }
+
+  .invoiceDate {
+    font-size: 0.75rem;
+  }
+
+  .price {
+    font-size: 0.875rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 2px 6px;
+  }
+
+  .totalSection {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .totalLabel {
+    font-size: 0.8rem;
+  }
+
+  .totalAmount {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

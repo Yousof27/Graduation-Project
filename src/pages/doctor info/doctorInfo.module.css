@@ -1,0 +1,29 @@
+.main {
+    @apply my-[100px]
+}
+
+.title {
+    @apply text-[32px] font-bold text-center mb-[20px];
+}
+
+.container {
+    @apply p-[1.25rem_0rem] grid items-start gap-[1.25rem];
+}
+
+.doctorReviewsContainer,
+.doctorPostsContainer {
+    @apply mt-[90px] rounded-[0.625rem]  border border-[#0077cc62] bg-[#f8f9fa] overflow-hidden relative ;
+}
+
+.doctorPostsContainer {
+    @apply p-[1rem] ;
+}
+
+.doctorReviewsContainer {
+    @apply [grid-area:unset] relative min-w-[300px] pb-0 top-0;
+    @apply lg:[grid-area:1/2] lg:sticky lg:top-[70px];
+}
+
+.doctorDetailsContainer {
+    @apply self-start bg-[#fefefe] m-auto border border-[#0077cc62] rounded-[0.625rem];
+}

@@ -1,0 +1,61 @@
+body {
+  background-color: #fff;
+}
+
+.page {
+  @apply my-[100px];
+}
+
+.page:not(:has(.page_title.empty)) .boxs_con {
+  @apply max-w-[377px] mx-auto
+        sm:max-w-[unset] sm:mx-[unset];
+}
+
+.container {
+  @apply mx-auto relative;
+
+  &:has(.page_title.empty) {
+    @apply h-full flex justify-center items-center;
+  }
+}
+
+.page_title {
+  @apply text-[#006eff] text-center text-[36px] font-bold mt-[40px] mb-[30px] capitalize;
+
+  &.empty {
+    @apply text-gray-200 m-0;
+  }
+}
+
+.boxs_con {
+  @apply flex gap-[30px] flex-col items-center py-[10px];
+}
+
+.options {
+  @apply my-[20px] mx-auto max-w-[500px] flex justify-between items-center;
+
+  p {
+    @apply font-bold text-[16px] bg-[#0060ddc1] text-white p-[10px];
+  }
+
+  button {
+    @apply text-[13px] uppercase text-white cursor-pointer font-bold rounded-[6px] px-[15px] py-[10px] transition-all duration-300;
+  }
+
+  button.buy_all {
+    @apply bg-[#e4a01c] max-w-[377px]
+            sm:max-w-[unset];
+
+    &:hover {
+      @apply bg-[#c48300];
+    }
+  }
+
+  button.clear {
+    @apply bg-[#cb0000] mr-[10px];
+
+    &:hover {
+      @apply bg-[#a50000];
+    }
+  }
+}

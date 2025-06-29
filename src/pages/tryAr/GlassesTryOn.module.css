@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply flex flex-col lg:flex-row;
+}
+
+.AR_model {
+  @apply w-full lg:w-1/2 bg-gradient-to-br from-blue-50 to-blue-100;
+}
+
+.glasses-try-on-container {
+  @apply bg-pink-50 rounded-xl p-5 font-sans m-4 lg:m-12 lg:mt-36 bg-gradient-to-br from-blue-50 to-blue-100;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.glasses-try-on-header h3 {
+  @apply text-gray-800 text-2xl mb-5;
+}
+
+.glasses-selection {
+  @apply bg-gray-50 rounded-lg p-5 w-full lg:w-1/2;
+}
+
+.glasses-grid {
+  @apply grid grid-cols-5 gap-4 w-full;
+}
+
+@media (max-width: 1024px) {
+  .glasses-grid {
+    @apply grid-cols-4;
+  }
+}
+
+@media (max-width: 768px) {
+  .glasses-grid {
+    @apply grid-cols-3;
+  }
+  .container {
+    @apply flex-col;
+  }
+  .AR_model,
+  .glasses-selection {
+    @apply w-full;
+  }
+}
+
+@media (max-width: 480px) {
+  .glasses-grid {
+    @apply grid-cols-2;
+  }
+}
+
+.glasses-item {
+  @apply bg-white border border-gray-200 rounded-lg p-4 cursor-pointer transition-all duration-300 aspect-square flex items-center justify-center;
+}
+
+.selected {
+  @apply border-pink-500 shadow-lg shadow-pink-200/50;
+}
+
+.glasses-image {
+  @apply flex justify-center items-center h-full w-full;
+}
+
+.glasses-image img {
+  @apply max-w-full max-h-full object-contain;
+}
+
+.loading-state,
+.error-state {
+  @apply text-center p-5 text-gray-600 italic;
+}
+
+.error-state {
+  @apply text-red-600;
+}

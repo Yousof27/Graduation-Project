@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@layer components {
+  .action-grid-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 mb-10 animate-fadeInUp;
+  }
+
+  .action-grid-card {
+    @apply bg-white border border-sky-200 rounded-xl p-6 text-center cursor-pointer transform transition-shadow hover:shadow-lg;
+  }
+
+  .action-grid-icon {
+    @apply text-4xl text-sky-600 mb-4 animate-bounce;
+  }
+
+  .action-grid-title {
+    @apply text-lg font-semibold text-gray-800 mb-2;
+  }
+
+  .action-grid-desc {
+    @apply text-sm text-gray-600;
+  }
+}

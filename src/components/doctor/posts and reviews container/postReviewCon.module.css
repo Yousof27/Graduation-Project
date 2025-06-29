@@ -1,0 +1,364 @@
+:root {
+  --primary-dark: #1e3a8a;
+  --primary: #1e40af;
+  --primary-light: #3b82f6;
+  --primary-extra-light: #dbeafe;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --shadow: 0 10px 25px rgba(30, 64, 175, 0.15);
+  --transition: all 0.3s ease;
+}
+
+.container {
+  background: var(--glass-bg);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(30, 64, 175, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.reviewStats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ratingBadge {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ratingBadge span {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-left: 4px;
+}
+
+.reviewCount {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.innerCon.review {
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #64748b;
+}
+
+.emptyIllustration {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1.5rem;
+  background: var(--primary-extra-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyeIcon {
+  font-size: 3.5rem;
+}
+
+.plusIcon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.emptyState p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.emptyState p:first-of-type {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+}
+
+.ctaButton {
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.25);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.35);
+}
+
+.formCon {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border: 1px solid rgba(30, 64, 175, 0.15);
+  box-shadow: 0 8px 30px rgba(30, 64, 175, 0.1);
+  transition: var(--transition);
+}
+
+.formCon.focused {
+  box-shadow: 0 8px 30px rgba(30, 64, 175, 0.2), 0 0 0 2px var(--primary-light);
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.formHeader h4 {
+  margin: 0;
+  color: var(--primary-dark);
+  font-size: 1.3rem;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+.closeButton:hover {
+  color: var(--primary);
+  background: rgba(30, 64, 175, 0.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: var(--primary-dark);
+  font-size: 1rem;
+}
+
+.ratingContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.ratingValue {
+  background: var(--primary-extra-light);
+  color: var(--primary-dark);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-weight: 700;
+  min-width: 60px;
+  text-align: center;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: var(--transition);
+  background: #f8fafc;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  background: white;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBtn {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.25);
+}
+
+.submitBtn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.submitBtn:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.35);
+}
+
+.fabContainer {
+  position: sticky;
+  bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  z-index: 10;
+}
+
+.fabButton {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(30, 64, 175, 0.3);
+  transition: var(--transition);
+}
+
+.fabIcon {
+  font-size: 1.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.2rem;
+    border-radius: 16px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+  
+  .reviewStats {
+    margin-top: 0.5rem;
+  }
+  
+  .innerCon.review {
+    max-height: 400px;
+  }
+  
+  .formCon {
+    padding: 1.2rem;
+  }
+  
+  .ratingContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  
+  .innerCon.review {
+    max-height: 350px;
+  }
+  
+  .emptyIllustration {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .eyeIcon {
+    font-size: 2.8rem;
+  }
+  
+  .fabButton {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .submitBtn {
+    width: 100%;
+    text-align: center;
+  }
+}

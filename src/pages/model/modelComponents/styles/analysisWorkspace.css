@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .analysis-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-10 mb-10 animate-fadeInUp;
+  }
+
+  .left-panel,
+  .right-panel {
+    @apply relative bg-white border border-sky-200 rounded-2xl p-10 backdrop-blur-md;
+  }
+
+  .section-title {
+    @apply text-xl font-semibold mb-6 text-sky-600 flex items-center;
+  }
+
+  .drop-zone {
+    @apply border-2 border-dashed border-sky-400 rounded-xl p-14 text-center transition-all cursor-pointer bg-sky-50 hover:bg-sky-100 hover:scale-105;
+  }
+
+  .drop-zone-icon {
+    @apply text-5xl text-sky-600 mb-5 animate-bounce;
+  }
+
+  .drop-zone-text {
+    @apply text-base text-gray-700 mb-2;
+  }
+
+  .drop-zone-subtext {
+    @apply text-sm text-gray-500;
+  }
+
+  .uploaded-image {
+    @apply mx-auto max-w-full max-h-80 object-contain rounded-xl;
+  }
+
+  .analyze-btn {
+    @apply bg-gradient-to-r from-sky-600 to-sky-800 text-white font-semibold px-8 py-4 mt-6 mx-auto block rounded-full hover:-translate-y-1 transition-all shadow-lg;
+  }
+
+  .upload-another-btn {
+    @apply bg-sky-600 text-white font-semibold px-6 py-2 mt-6 mx-auto block rounded-full hover:bg-sky-700 transition-all;
+  }
+
+  .scan-viz {
+    @apply relative w-full h-52 bg-sky-50 rounded-lg mb-8 overflow-hidden;
+  }
+
+  .scan-bar {
+    @apply absolute top-0 left-[-100%] w-full h-full bg-gradient-to-r from-transparent via-sky-600 to-transparent animate-scan;
+  }
+
+  .progress-section {
+    @apply mb-8 space-y-4;
+  }
+
+  .progress-item {
+    @apply flex items-center opacity-0 animate-fadeInLeft;
+  }
+
+  .progress-icon {
+    @apply w-8 h-8 rounded-full flex items-center justify-center mr-4 bg-sky-200 text-gray-600 transition-all;
+  }
+
+  .progress-icon.complete {
+    @apply bg-sky-600 text-white animate-checkmark;
+  }
+
+  .progress-text {
+    @apply text-gray-700 transition-all;
+  }
+
+  .progress-text.complete {
+    @apply text-sky-600;
+  }
+
+  .diagnosis-result {
+    @apply space-y-6;
+  }
+
+  .result-box {
+    @apply bg-sky-50 border border-sky-200 rounded-xl p-6;
+  }
+
+  .diagnosis-name {
+    @apply text-2xl font-semibold text-sky-600 mb-4;
+  }
+
+  .confidence-bar {
+    @apply w-full h-3 bg-gray-200 rounded-full overflow-hidden;
+  }
+
+  .confidence-fill {
+    @apply h-full bg-gradient-to-r from-sky-600 to-sky-800 rounded-full transition-all;
+  }
+}
+
+@layer utilities {
+  .animate-fadeInUp {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-fadeInLeft {
+    animation: fadeInLeft 0.6s ease-out forwards;
+  }
+
+  .animate-checkmark {
+    animation: checkmark 0.4s ease-out;
+  }
+
+  .animate-scan {
+    animation: scan 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes checkmark {
+    0% {
+      transform: scale(0);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes scan {
+    0% {
+      left: -100%;
+    }
+
+    100% {
+      left: 100%;
+    }
+  }
+}
