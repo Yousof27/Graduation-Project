@@ -112,5 +112,5 @@ npm run dev
 
 **Youssef Kamal**  
 Front-End Developer  
-[LinkedIn](https://www.linkedin.com/in/youssef-kamal-1-front-end-dev) • [GitHub](https://github.com/Yousof27)  
+[LinkedIn](https://www.linkedin.com/in/yousof-kamal-helmy) • [GitHub](https://github.com/Yousof27)  
 Email: yousofkamal24@gmail.com
