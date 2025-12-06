@@ -6,6 +6,12 @@ This repository contains the front-end code for **Eye Care Hub**, a full-stack m
 
 ---
 
+### 🌐 **Live Demo**
+
+**https://eyecare-hub-front-end.vercel.app/**
+
+---
+
 ## 🚀 Project Overview
 
 Eye Care Hub is a modern web platform designed to improve access to eye care services through technology. It includes:
